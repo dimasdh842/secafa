@@ -39,7 +39,7 @@ let epsilonElement = document.getElementById("e-value")
 let container = document.querySelector(".container")
 let hasilXAhkir = 0.0
 let modeElement = document.getElementById("mode")
-let batasAtas,batasBawah,epsilon,mode
+let batasAtas,batasBawah,epsilon,mode = "mode-1"
 
 draggables.forEach(e => {
     e.addEventListener("dragstart",() => {
@@ -64,12 +64,12 @@ modeElement.addEventListener("input", (e) => {
 
     if(mode == "mode-2") {
 
-        document.getElementById("x-value-label").innerText = "first Guess"
+        document.getElementById("x-value-label").innerText = "First Guess"
         document.getElementById("y-value-label").innerText = "Second Guess"
     } else {
         
         document.getElementById("x-value-label").innerText = "First Guess"
-        document.getElementById("y-value-label").innerText = "Seconf Guess"
+        document.getElementById("y-value-label").innerText = "Second Guess"
     }
 })
 
@@ -221,16 +221,10 @@ buttonProcess.addEventListener("click",() => {
     c = parseFloat(cView.textContent)
     
     if ( mode == "mode-1") {
-
         falsePosition(batasBawah,batasAtas,epsilon)
     } else if (mode == "mode-2") {
         secant(batasBawah,batasAtas,epsilon,10)
-    } else if(mode == "mode-3") {
-        bisection(batasBawah,batasAtas,epsilon)
-    } else{
-        FixedPointIteration(batasBawah,epsilon,10)
-    }
-    // f(12)
+    }// f(12)
 
 })
 
