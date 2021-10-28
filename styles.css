@@ -98,7 +98,8 @@ input,select{
 .step-result-container{
     padding: 10px;
     background: #F4A442;
-    margin: 10px;    
+    margin: 10px;
+    margin-bottom: 50px;    
 }
 .input-all{
     display: flex;
@@ -233,6 +234,9 @@ input,select{
 .opacity-0{
     opacity: 0;
 }
+.container-final {
+    margin-bottom: 100px;
+}
 @keyframes lds-roller {
     0% {
         transform: rotate(0deg);
@@ -248,8 +252,10 @@ footer{
     font-size: smaller;
     text-align: center;
     background-color: #125C13;
-    margin: 10px -10px -10px;
+    margin: 100px -10px -10px;
     padding: 20px;
     font-weight: 700;
     color: white;
+    position: absolute;
+    bottom: 0;
     }
