@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    background: url('./bg.jpg');
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+#a-view-container,#b-view-container,#c-view-container{
+    color: white;
+}
+.container{
+    width: 425px;
+    background-color: #E8E1D9;
+    margin: 0 auto;
+    /* opacity: 0.5; */
+    padding: 1rem;
+        height: 100vh;
+    overflow-y: scroll;
+    padding: 10px 10px;
+    box-sizing: border-box; 
+    display: none;
+
+}   
+
+.mode{
+    margin: 10px 0;
+}
+
+
+.d-inline{
+    display: inline-block;
+    padding: 10px;
+    background-color: #125C13;
+}
+
+
+.title-2,
+.title-3,
+.title-4{
+    font-size: 16px;
+}
+.add-ico{
+    /* margin: 100px 0; */
+    padding: 10px;
+    /* background-color: blue; */
+}
+.dropzone-container{
+    /* padding: 10px; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,select{
+    display: inline-block;
+}
+.dropzone{
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px 0;
+    background-color: #F4A442;
+}
+
+.input-container{
+    width:70%;
+    padding: 5px;
+    margin: 0 auto 10px;
+}
+
+.input-a,.input-b,.input-c,.pangkat-a,.pangkat-b{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid #125C13;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.dragging{
+    opacity: 0.5;
+    background-color: red;
+}
+
+.step-result-container{
+    padding: 10px;
+    background: #F4A442;
+    margin: 10px;    
+}
+.input-all{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.input-all button {
+    background: #123C13;
+    border: 0;
+    padding: 20px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.input-all input {
+    padding: 10px;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #cef;
+    margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+.container-loader{
+    width: 100vw;
+    height: 100vh;
+    background: #123C15;
+    position:absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.display-block{
+    display: block;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+footer{
+    font-size: smaller;
+    text-align: center;
+    background-color: #125C13;
+    margin: 10px -10px -10px;
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+    }
