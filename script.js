@@ -30,7 +30,7 @@ let viewCContainer = document.getElementById("c-view-container")
 let inputContainerdropzone1 = document.querySelector("#input-a") 
 let inputContainerdropzone2 = document.querySelector("#input-b") 
 let persamaan = ["a","b"]
-let a = 1,apangkat = 2,aoperator = "+",b = "e" ,bpangkat = 1,boperator = "+",c=4   
+let a = 1,apangkat = 2,aoperator = "+",b = "e" ,bpangkat = 1,boperator = "+",c=12 
 let buttonProcess = document.getElementById("process-id")
 let result = 0
 let batasBawahElement = document.getElementById("x-value")
@@ -224,7 +224,7 @@ buttonProcess.addEventListener("click",() => {
         falsePosition(batasBawah,batasAtas,epsilon)
     } else if (mode == "mode-2") {
         secant(batasBawah,batasAtas,epsilon,10)
-    }// f(12)
+    }
 
 })
 
